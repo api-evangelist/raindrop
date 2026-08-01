@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  auth.raindrop.ai OpenID configuration, raindrop.ai/docs, and the raindrop-rust
+  SDK (OTLP-style traces).
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Authorization Code grant with PKCE (S256) exposed at
+    auth.raindrop.ai/propelauth/oauth/authorize; MCP server supports OAuth 2.1.
+- id: oidc
+  conforms: true
+  evidence: >-
+    Valid OpenID Connect discovery document at
+    auth.raindrop.ai/.well-known/openid-configuration (RS256, scopes openid/email/profile).
+- id: opentelemetry
+  conforms: partial
+  evidence: >-
+    Rust SDK advertises "OTLP-style traces"; Raindrop ingests spans/tool calls,
+    but a formal OTLP endpoint is not documented as a public standard surface.
+- id: rfc9457
+  conforms: false
+  evidence: >-
+    Errors use a custom { error: { code, message } } envelope, not
+    application/problem+json.
+- id: idempotency
+  conforms: false
+  evidence: No idempotency key/header documented for ingest.

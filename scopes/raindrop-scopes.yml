@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+source: https://auth.raindrop.ai/.well-known/openid-configuration
+flow: authorization_code
+issuer: https://auth.raindrop.ai
+docs: https://www.raindrop.ai/docs/mcp/overview
+note: >-
+  OAuth/OIDC scopes advertised by Raindrop's PropelAuth-backed authorization
+  server (used for MCP OAuth 2.1 and dashboard sign-in). The ingest and query
+  REST APIs use bearer API keys rather than OAuth scopes.
+scopes:
+- name: openid
+  description: Standard OpenID Connect scope; returns an ID token.
+- name: email
+  description: Access to the user's email address and verification status.
+- name: profile
+  description: Access to basic profile claims (first_name, last_name, picture_url).

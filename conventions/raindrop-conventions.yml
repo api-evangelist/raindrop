@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  raindrop.ai/docs/sdk/http-api and raindrop.ai/docs/query-api/api-reference;
+  live probe of api.raindrop.ai error envelope.
+authentication:
+  style: bearer-token
+  header: Authorization
+  note: Separate write (ingest) and query keys; see authentication/raindrop-authentication.yml.
+project_targeting:
+  header: X-Raindrop-Project-Id
+  default: Production
+versioning:
+  style: uri-path
+  current: v1
+  example: https://api.raindrop.ai/v1/events/track
+ingest:
+  batch: true
+  body_shape: JSON array of event objects
+  max_event_size: 1 MB
+  success_status: 204
+rate_limiting:
+  scope: Query API
+  limits:
+  - endpoint: most endpoints
+    limit: 200 RPM
+  - endpoint: /v1/events/search
+    limit: 50 RPM
+  - endpoint: global
+    limit: 20 RPS
+error_envelope:
+  format: custom-json
+  shape: '{ "error": { "code": "UNAUTHORIZED", "message": "..." } }'
+  note: >-
+    Not RFC 9457 problem+json; errors return a JSON object with an error.code
+    and error.message. See errors/raindrop-problem-types.yml.
+idempotency:
+  supported: false
+  note: No idempotency key/header is documented; ingest is append-only batch tracking.
+pagination:
+  note: Query API list endpoints support search, count, timeseries, and facets variants.
+crosslinks:
+  errors: errors/raindrop-problem-types.yml
+  authentication: authentication/raindrop-authentication.yml
+  lifecycle: lifecycle/raindrop-lifecycle.yml

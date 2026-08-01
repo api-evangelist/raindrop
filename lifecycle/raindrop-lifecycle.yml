@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  raindrop.ai/docs (versioning in URI path, Beta labeling of SDKs/integrations),
+  trust.raindrop.ai, and DNS probes.
+versioning:
+  style: uri-path
+  current: v1
+maturity_labels:
+  note: >-
+    Raindrop labels several SDKs and integrations "(Beta)" in the docs
+    (Rust, Java, and many framework integrations), signalling pre-GA surface.
+  beta:
+  - Rust SDK
+  - Java SDK
+  - numerous framework integrations (LangChain, CrewAI, DSPy, Mastra, etc.)
+deprecation_policy:
+  documented: false
+  sunset_header: unknown
+  note: No public deprecation/Sunset (RFC 8594) policy located as of this pass.
+status_page:
+  present: false
+  note: No public status page found (status.raindrop.ai did not resolve).
+sla:
+  documented: false
+trust_center: https://trust.raindrop.ai/
+support: https://www.raindrop.ai/docs/support

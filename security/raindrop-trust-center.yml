@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://trust.raindrop.ai/ and raindrop.ai homepage / data-security docs.
+trust_center: https://trust.raindrop.ai/
+security_docs: https://www.raindrop.ai/docs/security/data-security-and-privacy
+pii_redaction: https://www.raindrop.ai/docs/security/pii-redaction
+certifications:
+- name: SOC 2 Type II
+  status: compliant
+  evidence: Stated on raindrop.ai ("SOC 2 Type II compliant") with a public Trust Center.
+privacy_features:
+- name: PII Guard
+  description: Automatic PII redaction before data reaches Raindrop servers.
+notes: >-
+  Trust Center is a hosted SPA (no server.txt / security.txt detected). SOC 2
+  Type II is the named certification; no ISO 27001 / PCI / HIPAA / FedRAMP claim
+  located in this pass.

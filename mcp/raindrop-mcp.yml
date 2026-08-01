@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.raindrop.ai/docs/mcp/overview
+name: Raindrop MCP Server
+status: official
+transport: remote/hosted
+endpoint: https://mcp.raindrop.ai/mcp
+description: >-
+  Official hosted Raindrop MCP server — nothing to install. Query your Raindrop
+  data directly from an AI coding assistant. Fronts the Raindrop Triage agent,
+  which investigates traces and surfaces root-cause hypotheses with the events
+  that demonstrate them.
+authentication:
+- type: oauth2.1
+  default: true
+  note: Browser-based OAuth for clients that support it.
+- type: api_key
+  header: 'Authorization: Bearer <api-key>'
+  note: Fallback for clients without OAuth; keys from app.raindrop.ai settings.
+tools:
+- name: activity_overview
+  description: Retrieve event trends, recent issues, and top signals.
+- name: issue_detection
+  description: Issue Detection reports and Stumbles inspection.
+- name: search_events
+  description: Semantic search across production events.
+- name: inspect_trace
+  description: Inspect a trace with execution details.
+- name: quantify_signals
+  description: Quantify and filter signals.
+- name: user_conversations
+  description: Browse a user's conversation history.
+- name: manage_memory
+  description: List, create, edit, and delete memories.
+- name: triage_issue
+  description: Resolve, ignore, reopen, or reprioritize issues.

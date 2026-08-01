@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.raindrop.ai/docs/workshop/overview and github.com/raindrop-ai/workshop
+name: Raindrop Workshop
+description: >-
+  Open-source (MIT) local debugger for AI agents. Watch every token, tool call,
+  and decision stream into your browser as it happens; write and run agent evals.
+  Runs entirely on your machine.
+repo: https://github.com/raindrop-ai/workshop
+license: MIT
+install:
+- method: curl
+  command: curl -fsSL https://raindrop.sh/install | bash
+commands:
+- command: raindrop workshop
+  description: Start Workshop and open the UI.
+- command: raindrop workshop setup
+  description: Configure .env, then launch.
+- command: raindrop workshop status
+  description: Check health.
+- command: raindrop workshop stop
+  description: Stop the service.
+- command: raindrop update
+  description: Update the binary.
+related:
+  skills_installer: npx skills add raindrop-ai/skills --skill <name>

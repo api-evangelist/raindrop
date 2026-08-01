@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  raindrop.ai/docs/sdk/http-api, raindrop.ai/docs/query-api/api-reference,
+  raindrop.ai/docs/mcp/overview, and auth.raindrop.ai OpenID configuration.
+summary: >-
+  Raindrop's ingest and query APIs authenticate with bearer API keys issued
+  from app.raindrop.ai. The MCP server and dashboard additionally support
+  OAuth 2.1 / OpenID Connect via PropelAuth (auth.raindrop.ai).
+schemes:
+- name: ingest_write_key
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Bearer <WRITE_KEY>'
+  applies_to: https://api.raindrop.ai/v1
+  note: Write/ingest key for /events/track, /signals/track, /users/identify.
+- name: query_api_key
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Bearer <QUERY_API_KEY>'
+  applies_to: https://query.raindrop.ai/v1
+  note: Read-only query key for the Query API.
+- name: propelauth_oidc
+  type: openIdConnect
+  issuer: https://auth.raindrop.ai
+  openid_configuration: https://auth.raindrop.ai/.well-known/openid-configuration
+  authorization_endpoint: https://auth.raindrop.ai/propelauth/oauth/authorize
+  token_endpoint: https://auth.raindrop.ai/propelauth/oauth/token
+  userinfo_endpoint: https://auth.raindrop.ai/propelauth/oauth/userinfo
+  grant_types: [authorization_code]
+  pkce: [S256]
+  scopes: [openid, email, profile]
+  applies_to: MCP server (OAuth 2.1) and dashboard sign-in.
+project_scoping:
+  header: X-Raindrop-Project-Id
+  default: Production
+  note: Optional header to target a specific project on ingest and query calls.

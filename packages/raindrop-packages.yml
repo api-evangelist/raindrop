@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  Raindrop SDK docs (raindrop.ai/docs/sdk/*), npm, PyPI, pkg.go.dev, and the
+  raindrop-ai GitHub organization.
+packages:
+- name: raindrop-ai
+  registry: npm
+  official: true
+  language: JavaScript/TypeScript
+  latest: 0.2.4
+  install: npm install raindrop-ai
+  url: https://www.npmjs.com/package/raindrop-ai
+  docs: https://www.raindrop.ai/docs/sdk/typescript
+  description: Full-featured TypeScript SDK with tracing for Node.js and edge runtimes.
+- name: raindrop-ai
+  registry: PyPI
+  official: true
+  language: Python
+  latest: 0.0.64
+  install: pip install raindrop-ai
+  url: https://pypi.org/project/raindrop-ai/
+  docs: https://www.raindrop.ai/docs/sdk/python
+  description: Native Python SDK for FastAPI, Django, and other Python frameworks.
+- name: github.com/raindrop-ai/go
+  registry: pkg.go.dev
+  official: true
+  language: Go
+  url: https://pkg.go.dev/github.com/raindrop-ai/go
+  docs: https://www.raindrop.ai/docs/sdk/go
+  description: Go SDK for tracking user events and AI interactions.
+- name: raindrop-rust
+  registry: github
+  official: true
+  language: Rust
+  status: beta
+  url: https://github.com/raindrop-ai/raindrop-rust
+  docs: https://www.raindrop.ai/docs/sdk/rust
+  description: >-
+    Raindrop AI observability SDK for Rust (Beta) — track AI events, signals,
+    and OTLP-style traces. MIT licensed.
+- name: raindrop-java
+  registry: docs
+  official: true
+  language: Java
+  status: beta
+  docs: https://www.raindrop.ai/docs/sdk/java
+  description: JVM SDK to track user events and AI interactions (installation per docs).
+- name: raindrop-ai (browser)
+  registry: npm
+  official: true
+  language: JavaScript
+  install: npm install raindrop-ai
+  docs: https://www.raindrop.ai/docs/sdk/browser
+  description: Minimal browser-safe SDK for tracking AI events via /v1/events from web apps.

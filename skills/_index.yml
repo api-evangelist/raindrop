@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.raindrop.ai/docs/integrations/skills and github.com/raindrop-ai/skills
+description: >-
+  Raindrop publishes open-source Agent Skills so an AI coding assistant can set
+  up, debug, and investigate Raindrop for you. Works with Claude Code, Cursor,
+  Devin, Pi, and any assistant supporting the skills format.
+repo: https://github.com/raindrop-ai/skills
+install: npx skills add raindrop-ai/skills --skill <name>
+skills:
+- name: raindrop-setup
+  file: raindrop-setup.md
+  install: npx skills add raindrop-ai/skills --skill raindrop-setup
+  description: >-
+    Locate AI call sites, choose the right integration, and instrument Raindrop
+    throughout your codebase.
+- name: raindrop-investigate
+  file: raindrop-investigate.md
+  install: npx skills add raindrop-ai/skills --skill raindrop-investigate
+  description: >-
+    Diagnose and resolve issues in AI applications through Raindrop's MCP tools
+    with systematic troubleshooting.

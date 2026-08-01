@@ -1,0 +1,37 @@
+# Raindrop AI
+
+> Real-Time Monitoring and Error Tracking for AI Agents
+
+Raindrop is the first Sentry-like monitoring platform for AI agents. AI engineers use Raindrop to get alerts about hidden issues in their AI products, search through production data, track custom behaviors, and run experiments.
+
+## Core Capabilities
+
+- **Issue Detection**: Automatically detect when AI agents fail, loop, hallucinate, or misbehave
+- **Deep Search**: Semantic and keyword search across millions of AI agent events
+- **Custom Tracking**: Define any behavior to monitor using natural language
+- **Alerts**: Get Slack, email, and webhook notifications when your agent fails
+- **Experiments**: A/B test prompts, models, tool calls, and feature flags
+- **Tracing**: Step-by-step traces to find the root cause of issues
+- **Signals**: Track thumbs up/down, tool calls, and regex-based patterns
+- **PII Guard**: Automatic PII redaction before data reaches Raindrop servers
+
+## Links
+
+- Website: https://www.raindrop.ai
+- App: https://app.raindrop.ai
+- Documentation: https://www.raindrop.ai/docs/introduction
+- Blog: https://www.raindrop.ai/blog
+- Security: https://www.raindrop.ai/docs/security/data-security-and-privacy
+
+## Case Studies
+
+- Tolan: https://www.raindrop.ai/case-studies/tolan/
+- Spiral: https://www.raindrop.ai/case-studies/spiral/
+- Howie: https://www.raindrop.ai/case-studies/howie/
+- Unstuck: https://www.raindrop.ai/case-studies/unstuck/
+- New Computer: https://www.raindrop.ai/case-studies/new-computer/
+
+## Contact
+
+- Sales: sales@raindrop.ai
+- Schedule a call: https://cal.com/team/raindrop-ai/chat-15-min

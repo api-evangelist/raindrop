@@ -1,23 +1,142 @@
 aid: raindrop
 name: Raindrop
-description: Raindrop is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Raindrop is the monitoring and observability platform for AI agents — a
+  "Sentry for AI agents" that discovers silent agent failures in production.
+  AI engineering teams use Raindrop to detect when agents fail, loop,
+  hallucinate, or misbehave; run semantic and keyword Deep Search across
+  millions of agent events; define custom behaviors to track in natural
+  language; get Slack, email, and webhook alerts; inspect step-by-step
+  traces to root-cause issues; and A/B test prompts, models, tool calls,
+  and feature flags with Experiments. Raindrop ships first-party SDKs
+  (TypeScript, Python, Go, Rust beta, Java beta, browser), an ingest HTTP
+  API, a read-only Query API, a hosted MCP server, open-source Agent Skills,
+  and the open-source Workshop local agent debugger. Founded in 2023 and
+  headquartered in San Francisco, Raindrop raised a $15M seed led by
+  Lightspeed Venture Partners in December 2025.
 url: https://raw.githubusercontent.com/api-evangelist/raindrop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - lightspeed-venture-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
-specificationVersion: '0.20'
-created: '2026-07-17'
-modified: '2026-07-17'
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.raindrop.ai/social.png
 tags:
 - Company
-apis: []
+- AI
+- Agents
+- Observability
+- Monitoring
+- LLMOps
+- Developer Tools
+- Tracing
+created: '2026-07-17'
+modified: '2026-07-20'
+apis:
+- name: Raindrop Ingest API
+  description: >-
+    Server-to-server ingest/tracking API for sending AI interactions, events,
+    feedback signals, and user identity into Raindrop. Bearer write-key auth;
+    authorized requests return 204. Project targeting via X-Raindrop-Project-Id.
+  humanURL: https://www.raindrop.ai/docs/sdk/http-api
+  baseURL: https://api.raindrop.ai/v1
+  properties:
+  - type: Documentation
+    url: https://www.raindrop.ai/docs/sdk/http-api
+  - type: Authentication
+    url: authentication/raindrop-authentication.yml
+  - type: ErrorCatalog
+    url: errors/raindrop-problem-types.yml
+- name: Raindrop Query API
+  description: >-
+    Read-only Query API for retrieving events, traces, signals, users, and
+    conversations from Raindrop, including search, count, timeseries, and
+    facets. Bearer query-key auth; rate limited (200 RPM, search 50 RPM,
+    20 RPS). Project scoping via X-Raindrop-Project-Id.
+  humanURL: https://www.raindrop.ai/docs/query-api/api-reference
+  baseURL: https://query.raindrop.ai/v1
+  properties:
+  - type: APIReference
+    url: https://www.raindrop.ai/docs/query-api/api-reference
+  - type: SDK
+    url: https://www.raindrop.ai/docs/query-api/sdk
+  - type: RateLimits
+    url: conventions/raindrop-conventions.yml
+common:
+- type: DeveloperPortal
+  url: https://www.raindrop.ai/docs/introduction
+- type: Documentation
+  url: https://www.raindrop.ai/docs/introduction
+- type: APIReference
+  url: https://www.raindrop.ai/docs/query-api/api-reference
+- type: GettingStarted
+  url: https://www.raindrop.ai/docs/introduction
+- type: Authentication
+  url: authentication/raindrop-authentication.yml
+- type: SDKs
+  url: packages/raindrop-packages.yml
+- type: CLI
+  url: cli/raindrop-cli.yml
+- type: MCPServer
+  url: mcp/raindrop-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/raindrop-llms.txt
+- type: WellKnown
+  url: well-known/raindrop-well-known.yml
+- type: OAuthScopes
+  url: scopes/raindrop-scopes.yml
+- type: Conventions
+  url: conventions/raindrop-conventions.yml
+- type: ErrorCatalog
+  url: errors/raindrop-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/raindrop-lifecycle.yml
+- type: Conformance
+  url: conformance/raindrop-conformance.yml
+- type: Compliance
+  url: security/raindrop-trust-center.yml
+- type: TrustCenter
+  url: security/raindrop-trust-center.yml
+- type: DomainSecurity
+  url: security/raindrop-domain-security.yml
+- type: Webhooks
+  url: https://www.raindrop.ai/docs/platform/alerts
+- type: Blog
+  url: https://www.raindrop.ai/blog
+- type: Support
+  url: https://www.raindrop.ai/docs/support
+- type: GitHubOrganization
+  url: https://github.com/raindrop-ai
+- type: Pricing
+  url: https://www.raindrop.ai/pricing
+- type: SignUp
+  url: https://auth.raindrop.ai/en/signup
+- type: Login
+  url: https://app.raindrop.ai
+- type: TermsOfService
+  url: https://www.raindrop.ai/docs/security/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.raindrop.ai/docs/security/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 17
+  pass: local-v1

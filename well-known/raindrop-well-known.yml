@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: probed /.well-known/ across raindrop.ai hosts
+entries:
+- host: auth.raindrop.ai
+  path: /.well-known/openid-configuration
+  status: 200
+  file: raindrop-openid-configuration.json
+  note: PropelAuth-backed OpenID Connect discovery document (issuer https://auth.raindrop.ai).
+- host: auth.raindrop.ai
+  path: /.well-known/jwks.json
+  status: 200
+  note: JWKS referenced by the OpenID configuration.
+- host: www.raindrop.ai
+  path: /.well-known/security.txt
+  status: 404
+- host: www.raindrop.ai
+  path: /.well-known/api-catalog
+  status: 404
+- host: www.raindrop.ai
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: api.raindrop.ai
+  path: /.well-known/openid-configuration
+  status: 404
