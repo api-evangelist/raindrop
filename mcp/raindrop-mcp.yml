@@ -2,7 +2,8 @@ generated: '2026-07-20'
 method: searched
 source: https://www.raindrop.ai/docs/mcp/overview
 name: Raindrop MCP Server
-status: official
+status: published
+status_raw: official
 transport: remote/hosted
 endpoint: https://mcp.raindrop.ai/mcp
 description: >-
