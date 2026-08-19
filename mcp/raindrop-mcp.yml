@@ -6,11 +6,9 @@ status: published
 status_raw: official
 transport: remote/hosted
 endpoint: https://mcp.raindrop.ai/mcp
-description: >-
-  Official hosted Raindrop MCP server — nothing to install. Query your Raindrop
-  data directly from an AI coding assistant. Fronts the Raindrop Triage agent,
-  which investigates traces and surfaces root-cause hypotheses with the events
-  that demonstrate them.
+description: Official hosted Raindrop MCP server — nothing to install. Query your Raindrop data directly
+  from an AI coding assistant. Fronts the Raindrop Triage agent, which investigates traces and surfaces
+  root-cause hypotheses with the events that demonstrate them.
 authentication:
 - type: oauth2.1
   default: true
@@ -35,3 +33,9 @@ tools:
   description: List, create, edit, and delete memories.
 - name: triage_issue
   description: Resolve, ignore, reopen, or reprioritize issues.
+deployment:
+  mode: unclear
+  verified: searched
+  tools: 8
+  checked: '2026-08-12'
+  source: catalog MCP census
