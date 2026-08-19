@@ -17,6 +17,7 @@ description: >-
 url: https://raw.githubusercontent.com/api-evangelist/raindrop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+specificationVersion: '0.23'
 x-backed-by:
 - lightspeed-venture-partners
 accessModel:
