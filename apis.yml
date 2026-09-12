@@ -97,6 +97,8 @@ apis:
   - type: RateLimits
     url: conventions/raindrop-conventions.yml
 common:
+- type: Website
+  url: https://www.raindrop.ai/
 - type: DeveloperPortal
   url: https://www.raindrop.ai/docs/introduction
 - type: Documentation
