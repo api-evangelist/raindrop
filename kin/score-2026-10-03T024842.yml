@@ -1,24 +1,22 @@
-# Kin Score artifact — raindrop — 2026-09-01T063623
+# Kin Score artifact — raindrop — 2026-10-03T024842
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: raindrop
-  schema_version: 0.17.2
-  scored_at: '2026-09-01'
-  run_ts: 2026-09-01T063623
-  composite: 36.9
-  band: thin
+  schema_version: 0.23.0
+  scored_at: '2026-10-03'
+  run_ts: 2026-10-03T024842
+  composite: 39.6
+  band: developing
   facets:
-    discoverability: 75.9
+    discoverability: 71.7
     contract_quality: 0.0
-    governance: 18.2
+    contract_governance: 18.2
     operational_transparency: 10.5
     developer_ergonomics: 78.6
-    commercial_clarity: 50.0
-    contract_governance: 18.2
     access_clarity: 50.0
   agent_readiness:
-    score: 27.6
+    score: 27.1
     band: agent-aware
     dimensions:
       spec_presence: false
@@ -30,7 +28,7 @@ kin_score:
       error_semantics: documented
       openapi_examples: false
       rate_limit_signal: documented
-      event_surface_described: true
+      event_surface_described: unknown
       agent_skills: true
       well_known_catalog: false
       consent_identity: false
@@ -40,6 +38,12 @@ kin_score:
       protected_resource_metadata: false
       dynamic_client_registration: false
       agentic_commerce: false
+  regulatory:
+    applies: true
+    regime: Horizontal (data, software, accessibility, platform)
+    regime_id: horizontal
+    score: 36.4
+    matched_via: fallback
   provenance:
     mcp: first-party
     skills: first-party
