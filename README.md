@@ -64,6 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Raindrop is a company surfaced as a portfolio company of lightspeed-venture-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Raindrop is the monitoring and observability platform for AI agents — a "Sentry for AI agents" that discovers silent agent failures in production. AI engineering teams use Raindrop to detect when agents fail, loop, hallucinate, or misbehave; run semantic and keyword Deep Search across millions of agent events; define custom behaviors to track in natural language; get Slack, email, and webhook alerts; inspect step-by-step traces to root-cause issues; and A/B test prompts, models, tool calls, and feature flags with Experiments. Raindrop ships first-party SDKs (TypeScript, Python, Go, Rust beta, Java beta, browser), an ingest HTTP API, a read-only Query API, a hosted MCP server, open-source Agent Skills, and the open-source Workshop local agent debugger. Founded in 2023 and headquartered in San Francisco, Raindrop raised a $15M seed led by Lightspeed Venture Partners in December 2025.
 
-Backed by: lightspeed-venture-partners
+**Areas:** Company · Artificial Intelligence · Agents · Observability · Monitoring · LLMOps · Developer Tools · Tracing
+
+## Raindrop on APIs.io
+
+Everything profiled for Raindrop is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/raindrop/](https://apis.io/providers/raindrop/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Raindrop Ingest API](https://apis.io/apis/raindrop/raindrop-ingest-api/) — Server-to-server ingest/tracking API for sending AI interactions, events, feedback signals, and user identity into Raindrop. Bearer write-key auth;…
+- [Raindrop Query API](https://apis.io/apis/raindrop/raindrop-query-api/) — Read-only Query API for retrieving events, traces, signals, users, and conversations from Raindrop, including search, count, timeseries, and facets. Bearer…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Raindrop MCP Server](https://apis.io/servers/raindrop/raindrop-mcp-server/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Raindrop Authentication](https://apis.io/security/raindrop/raindrop-authentication/)
+- [Raindrop Domain Security](https://apis.io/security/raindrop/raindrop-domain-security/)
+- [Raindrop Trust Center](https://apis.io/security/raindrop/raindrop-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Raindrop Scopes](https://apis.io/scopes/raindrop/raindrop-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.raindrop.ai/)
+- [Documentation](https://www.raindrop.ai/docs/introduction)
+- [Getting started](https://www.raindrop.ai/docs/introduction)
+- [API reference](https://www.raindrop.ai/docs/query-api/api-reference)
+- [Pricing](https://www.raindrop.ai/pricing)
+- [Sign up](https://auth.raindrop.ai/en/signup)
+- [Support](https://www.raindrop.ai/docs/support)
+- [Blog](https://www.raindrop.ai/blog)
+- [Terms of service](https://www.raindrop.ai/docs/security/terms-of-use)
+- [Privacy policy](https://www.raindrop.ai/docs/security/privacy-policy)
+- [GitHub](https://github.com/raindrop-ai)
+
+## API Evangelist rating
+
+**Kin Score 39.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 78.6 |
+| Access clarity | 50.0 |
+
+**Agent readiness 27.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | unknown |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 36.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/raindrop/](https://apis.io/providers/raindrop/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Raindrop: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/raindrop/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
